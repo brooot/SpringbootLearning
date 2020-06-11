@@ -1,0 +1,15 @@
+spring:
+  profiles:
+    active: dev
+  datasource: # 数据库配置
+
+
+logging:
+  config: logback.xml
+  level:
+    com.itcodai.course01.dao: trace
+
+url:
+  orderUrl: http://localhost:8002
+  userUrl: http://localhost:8003
+  shoppingUrl: http://localhost:8004
