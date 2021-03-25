@@ -1,8 +1,6 @@
 package com.itcodai.course01.entity;
 
 
-
-
 public class User {
 
     private Integer id;

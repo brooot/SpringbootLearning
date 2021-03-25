@@ -15,7 +15,7 @@ public class TestController {
 
     private final static Logger logger = LoggerFactory.getLogger(TestController.class);
 
-//    获取单个某个服务的url
+    //    获取单个某个服务的url
     @Value("${url.orderUrl}")
     private String orderUrl;
 

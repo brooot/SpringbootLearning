@@ -14,17 +14,17 @@ import java.util.Map;
 public class JsonController {
 
     @RequestMapping("/file")
-    public String getfile(){
+    public String getfile() {
         return "file";
     }
 
     @RequestMapping("/user")
-    public User getUser(){
-        return new User(1 ,"小火龙", "123456");
+    public User getUser() {
+        return new User(1, "小火龙", "123456");
     }
 
     @RequestMapping("/list")
-    public List<User> getUserList(){
+    public List<User> getUserList() {
         List<User> userList = new ArrayList<>();
         User user1 = new User(1, "西瓜", "123456");
         User user2 = new User(2, "芒果", "123456");

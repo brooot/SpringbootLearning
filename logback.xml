@@ -2,10 +2,10 @@
 <configuration>
 
     <!-- 格式化输出：%date表示日期，%thread表示线程名，%-5level：级别从左显示5个字符宽度 %msg：日志消息，%n是换行符-->
-    <property name="LOG_PATTERN" value="%date{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n" />
+    <property name="LOG_PATTERN" value="%date{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n"/>
 
     <!-- 定义日志存储的路径，不要配置相对路径 -->
-    <property name="FILE_PATH" value="F:/springBootLogs/course01/demo.%d{yyyy-MM-dd}.%i.log" />
+    <property name="FILE_PATH" value="F:/springBootLogs/course01/demo.%d{yyyy-MM-dd}.%i.log"/>
 
     <!-- 控制台输出日志 -->
     <appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
@@ -33,26 +33,26 @@
         </encoder>
     </appender>
     <!-- project default level -->
-    <logger name="com.itcodai.course01" level="DEBUG" />
+    <logger name="com.itcodai.course01" level="DEBUG"/>
 
     <!-- 日志输出级别 -->
     <root level="DEBUG">
-        <appender-ref ref="CONSOLE" />
-        <appender-ref ref="FILE" />
+        <appender-ref ref="CONSOLE"/>
+        <appender-ref ref="FILE"/>
     </root>
 
     <root level="INFO">
-        <appender-ref ref="CONSOLE" />
-        <appender-ref ref="FILE" />
+        <appender-ref ref="CONSOLE"/>
+        <appender-ref ref="FILE"/>
     </root>
 
     <root level="WARN">
-        <appender-ref ref="CONSOLE" />
-        <appender-ref ref="FILE" />
+        <appender-ref ref="CONSOLE"/>
+        <appender-ref ref="FILE"/>
     </root>
 
     <root level="ERROR">
-        <appender-ref ref="CONSOLE" />
-        <appender-ref ref="FILE" />
+        <appender-ref ref="CONSOLE"/>
+        <appender-ref ref="FILE"/>
     </root>
 </configuration>
